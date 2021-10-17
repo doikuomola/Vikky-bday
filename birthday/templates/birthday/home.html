@@ -1,0 +1,178 @@
+{% extends 'birthday/base.html' %}
+{% load static %}
+
+{% block content %}
+<section id="intro">
+    {% include 'includes/nav.html' %}
+
+    <!-- Back to top button -->
+    <a id="button" class="bg-primary text-white p-3"><i class="bi bi-arrow-up"></i></a>
+    <!-- end of nav bar  -->
+    <div class="container-lg mt-5">
+        <div class="row align-items-baseline justify-content-start mt-5">
+            <div class="col-xs-6">
+                <div class="text-center text-lg-start">
+                    <p class="display-4 text-light d-none d-lg-block">
+                        <!-- <img src="https://www.animatedimages.org/data/media/49/animated-birthday-image-0260.gif"
+                            border="0" alt="animated-birthday-image-0260" style="width:300px" /> -->
+                        <img class="text-white img-fluid" src="{% static 'assets/images/happy-birthday-header.png' %}"
+                            alt="birthday image" width="500px" data-aos="fade-right" data-aos-offset="300"
+                            data-aos-easing="ease-in-sine"></p>
+                            <div class="nav-item  d-xs-block d-md-none text-center justify-content-center">
+                                <a id="see-more" class="nav-link btn btn-outline-secondary btn-sm text-white" " href="#wish">
+                                    Send me a bday wish
+                                </a>
+                            </div>
+                    
+                    <p class="display-3 ms-5 text-light" data-aos="zoom-in" data-aos-easing="linear"
+                    data-aos-duration="1500">Vikky</p>
+                    <div class="mt-3 ms-5 d-none d-md-block" data-aos="zoom-in" data-aos-easing="linear"
+                    data-aos-duration="1500">
+                        <a id="see-more" href="#wish" class="btn btn-outline-secondary btn-lg text-white">Send me a bday
+                            wish</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6"></div>
+
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container-lg my-5">
+        <div class="text-center text-decoration-underline">
+            <h2>Let me tell you About Me!</h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="text-center text-md-start mt-3 py-5">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur est vel saepe qui
+                        dolores eius sequi totam, molestiae, optio quod sapiente pariatur hic iusto? Ducimus beatae
+                        porro sit. Magnam molestiae qui iusto rerum praesentium architecto nobis provident quasi
+                        recusandae voluptatum facilis deleniti libero nostrum natus ea ab cumque, quisquam tempora
+                        id ullam necessitatibus a quia perferendis! Eos, suscipit ea alias in ipsa culpa quos,
+                        veniam inventore consequatur velit illo blanditiis expedita praesentium earum impedit
+                        eligendi quis nihil, facere at quasi dignissimos quae iusto? Aliquid sunt est, debitis
+                        reiciendis amet quidem suscipit ratione esse quae asperiores pariatur! Illo doloremque
+                        dolore modi.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="gallery" class="bg-light" >
+    <div class="container-lg my-5">
+        <div class="text-center text-decoration-underline">
+            <h2>My Gallery</h2>
+        </div>
+        <!-- Gallery -->
+
+        <div class="row mt-5 g-0" data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 hover01">
+                <div class="hover08">
+                    <a href="{% static 'assets/images/pic-1.jpeg' %}"><img src="{% static 'assets/images/pic-1.jpeg' %}"
+                            class="w-100 shadow-1-strong rounded mb-4 img-fluid" alt="" width=50px /></a>
+                </div>
+                <div class="hover08">
+                    <a href="{% static 'assets/images/pic-2.jpeg' %}"><img src="{% static 'assets/images/pic-2.jpeg' %}"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="" /></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 hover01">
+                <div class="hover08">
+                    <a href="{% static 'assets/images/pic-3.jpeg' %}"><img src="{% static 'assets/images/pic-3.jpeg' %}"
+                            class="w-100 shadow-1-strong rounded mb-4 img-fluid" alt="" width=50px /></a>
+                </div>
+                <div class="hover08">
+                    <a href="{% static 'assets/images/pic-4.jpeg' %}"><img src="{% static 'assets/images/pic-4.jpeg' %}"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="" /></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 hover01">
+                <div class="hover08">
+                    <a href="{% static 'assets/images/pic-1.jpeg' %}"><img src="{% static 'assets/images/pic-1.jpeg' %}"
+                            class="w-100 shadow-1-strong rounded mb-4 img-fluid" alt="" width=50px /></a>
+                </div>
+                <div class="hover08">
+                    <a href="{% static 'assets/images/pic-2.jpeg' %}"><img src="{% static 'assets/images/pic-2.jpeg' %}"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2 g-0">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 hover01">
+                <div class="hover08">
+                    <a href="{% static 'assets/images/pic-1.jpeg' %}"><img src="{% static 'assets/images/pic-1.jpeg' %}"
+                            class="w-100 shadow-1-strong rounded mb-4 img-fluid" alt="" width=50px /></a>
+                </div>
+                <div class="hover08">
+                    <a href="{% static 'assets/images/pic-2.jpeg' %}"><img src="{% static 'assets/images/pic-2.jpeg' %}"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="" /></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 hover01">
+                <div class="hover08">
+                    <a href="{% static 'assets/images/pic-3.jpeg' %}"><img src="{% static 'assets/images/pic-3.jpeg' %}"
+                            class="w-100 shadow-1-strong rounded mb-4 img-fluid" alt="" width=50px /></a>
+                </div>
+
+                <div class="hover08">
+                    <a href="{% static 'assets/images/pic-4.jpeg' %}"><img src="{% static 'assets/images/pic-4.jpeg' %}"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="" /></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 hover01">
+                <div class="hover08">
+                    <a href="{% static 'assets/images/pic-1.jpeg' %}"><img src="{% static 'assets/images/pic-1.jpeg' %}"
+                            class="w-100 shadow-1-strong rounded mb-4 img-fluid" alt="" width=50px /></a>
+                </div>
+
+                <div class="hover08">
+                    <a href="{% static 'assets/images/pic-2.jpeg' %}"><img src="{% static 'assets/images/pic-2.jpeg' %}"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center justify-content-center align-items-center d-flex">
+            <a class="btn" href="{% url 'live' %}" id="see-more">
+                See more ...
+            </a>
+        </div>
+        <!-- Gallery -->
+    </div>
+
+</section>
+<section id="wish">
+    <div class="container-lg mt-5">
+        <div class="text-center text-decoration-underline">
+            <h2>Please Send Me a Birthday Wish!</h2>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-8 px-4">
+                <form action="createwish" method="POST">
+                    {% csrf_token %}
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" name="name" class="form-control" placeholder="optional!">
+                    <label for="phone_number" class="form-label">Phone Number:</label>
+                    <input type="text" name="phone_number" class="form-control" placeholder="optional!">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea name="message" id="message" style="height: 200px" class="form-control"></textarea>
+                    <div class="text-center mt-3">
+                        <button class="btn btn-outline-primary" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% include 'includes/footer.html' %}
+{% endblock content %}

@@ -1,0 +1,43 @@
+{% extends 'birthday/base.html' %}
+
+{% block content %}
+{% include 'includes/nav.html' %}
+<div class="container my-5">
+    <div class="text-center my-3">
+
+        <h2>Wishes</h2>
+    </div>
+    <div class="row justify-content-center my-5">
+
+        {% for wish in wishes %}
+        <div class="col-xs-12">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="collapseExample">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#wish-{{wish.id}}" aria-expanded="true" aria-controls="collapseOne">
+                            <small><strong>
+                                    by
+                                    {% if not wish.name %}
+                                    anonymous
+                                    {% else %}
+                                    {{wish.name}}, {{wish.phone_number}} 
+                                    {% endif %}
+                                    <div>sent {{wish.createAt|timesince}} ago</div>
+                                </strong></small>
+                        </button>
+                    </h2>
+                    <div id="wish-{{wish.id}}" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#collapseExample">
+                        <div class="accordion-body">
+                            <p class="lead">{{wish.message}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+{% endblock content %}

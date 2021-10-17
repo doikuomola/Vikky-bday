@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Happy+Monkey:regular);
+
+
+body {
+	font-family: 'Happy Monkey';
+}
+
+.hover01 a img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.hover08 a img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.hover08 a:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+
+span.wishes-count {
+	border-radius: 100%;
+	color: red;
+	/* font-size: 1.5rem */
+}
+
+#see-more {
+	/* width: 200px; */
+	/* height: 50px; */
+	/* margin: 100px auto; */
+	/*background-image: linear-gradient(to left,lightgrey,gold);*/
+	/* background-color: hsl(58, 100%, 50%); */
+	/* border: 5px inset white; */
+	text-decoration: none;
+	/* text-align: center; */
+	/* line-height: 50px; */
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: capitalize;
+	animation: brath 8s linear infinite;
+	box-shadow: -1px 0px 10px #000;
+}
+
+@keyframes brath {
+	0% {
+		transform: scale(.9);
+	}
+
+	25% {
+		transform: scale(1.3);
+	}
+
+	60% {
+		transform: scale(.9);
+	}
+
+	100% {
+		transform: scale(1.3);
+	}
+}
+
+
+
+/* back to top  */
+
+#button {
+	display: inline-block;
+	/* background-color: #FF9800; */
+	/* width: 50px; */
+	/* height: 50px; */
+	text-align: center;
+	border-radius: 4px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	transition: background-color .3s,
+		opacity .5s, visibility .5s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1000;
+}
+
+#button::after {
+	/* content: "\f077"; */
+	/* font-family: FontAwesome; */
+	/* font-weight: normal; */
+	/* font-style: normal; */
+	font-size: 2em;
+	line-height: 50px;
+	color: #fff;
+}
+
+#button:hover {
+	cursor: pointer;
+	background-color: #333;
+}
+
+#button:active {
+	background-color: #555;
+}
+
+#button.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+.nav-item {
+	position: relative;
+	display: block;
+	padding: 10px 0;
+}
+
+.nav-link:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 1px;
+	transform: scaleX(0);
+	background-color: #0d6efd;
+	transition: transform 0.3s;
+}
+
+.nav-link:hover:after {
+	transform: scaleX(1);
+}
+
+
+#navbarNav>ul>li.nav-item.bg-light.broder-0.rounded {
+	height: 1%;
+}
+
+footer {
+	height: 50px;
+	flex-shrink: 0;
+}
+
+.display {
+	display: block;
+}
+
+.no-display {
+	display: none;
+}

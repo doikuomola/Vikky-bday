@@ -1,0 +1,24 @@
+{% extends 'birthday/base.html' %}
+
+{% block content %}
+{% include 'includes/nav.html' %}
+<div class="container my-5 bg-light">
+    <div class="text-center my-3">
+        <h2>Live Images</h2>
+    </div>
+    <div class="row justify-content-center align-items-center my-5" data-aos="fade-up"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
+
+        {% for image in images %}
+        <div class="col-md-4 text-center">
+            <img src="{{image.image.url}}" alt="live images" width=200px>
+            <p class="text-center mt-2">{{image.caption}}</p>
+        </div>
+        {% endfor %}
+
+
+    </div>
+
+</div>
+{% endblock content %}

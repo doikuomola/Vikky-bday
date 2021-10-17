@@ -1,0 +1,23 @@
+{% extends 'birthday/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+{% include 'includes/nav.html' %}
+<div class="container my-5" style="height:70vh">
+    <div class="text-center my-3">
+        <h2>Upload live images</h2>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-6 p-5 border rounded mt-4">
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{form|crispy}}
+                    <div class="text-center mt-3">
+                        <button class="btn btn-outline-primary">Upload</button>
+                    </div>
+                </form>
+
+        </div>
+    </div>
+</div>
+{% endblock content %}
